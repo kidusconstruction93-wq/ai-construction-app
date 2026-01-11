@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Construction Inspection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>AI Construction Inspection</h2>
+
+<div class="card">
+    <input id="siteName" placeholder="Site Name">
+    <input id="reportDate" type="date">
+</div>
+
+<div class="card">
+    <h3>Formwork Inspection</h3>
+    <input id="formworkAlignment" placeholder="Alignment (mm)">
+    <input id="formworkClean" placeholder="Cleanliness">
+    <input id="formworkBracing" placeholder="Bracing Status">
+</div>
+
+<div class="card">
+    <h3>Reinforcement Inspection</h3>
+    <input id="rebarSize" placeholder="Rebar Size (mm)">
+    <input id="rebarSpacing" placeholder="Spacing (mm)">
+    <input id="rebarClean" placeholder="Cleanliness">
+</div>
+
+<div class="card">
+    <h3>Concrete Inspection</h3>
+    <input id="concreteSlump" placeholder="Slump (mm)">
+    <input id="concreteCuring" placeholder="Curing Started?">
+</div>
+
+<div class="card">
+    <button onclick="sendToAI()">AI Review & Suggest</button>
+</div>
+
+<div class="card">
+    <h3>AI Suggestions / Remarks</h3>
+    <textarea id="aiOutput" rows="10" readonly placeholder="AI will show remarks here..."></textarea>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
